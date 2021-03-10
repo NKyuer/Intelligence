@@ -23,3 +23,37 @@ MyScaffold 通过一个Column widget，在垂直方向排列其子项。在Colum
 ##### 使用Materia组件  
 Flutter提供了许多widgets，可帮助您构建遵循Material Design的应用程序。Material应用程序以MaterialApp widget开始， 该widget在应用程序的根部创建了一些有用的widget，其中包括一个Navigator， 它管理由字符串标识的Widget栈（即页面路由栈）。Navigator可以让您的应用程序在页面之间的平滑的过渡。 是否使用MaterialApp完全是可选的，但是使用它是一个很好的做法。
 
+### Text class  
+带有单一样式的文本。
+
+“文本”小部件显示具有单个样式的文本字符串。该字符串可能会跨越多行，也可能全部显示在同一行上，具体取决于布局约束。
+
+该风格参数可选。如果省略，则文本将使用最接近的封闭DefaultTextStyle的样式。如果给定样式的 TextStyle.inherit属性为true（默认值），则该给定样式将与最接近的DefaultTextStyle合并。此合并行为非常有用，例如，在使用默认字体系列和大小时使文本变为粗体。  
+使用Text.rich构造函数，“文本”窗口小部件可以显示具有不同样式的TextSpan的段落。下面的示例显示每个单词具有不同样式的“ Hello beautiful world”。  
+
+### flutter体验
+
+Flutter是一个灵活的工具包，应该首先选择开发工具来编写、构建、运行flutter应用程序  
+Android Studio: 为Flutter提供完整的IDE体验.  
+
+##### 创建新应用  
+1. 选择 File>New Flutter Project  
+2. 选择 Flutter application 作为 project 类型, 然后点击 Next  
+3. 输入项目名称 (如 myapp), 然后点击 Next  
+4. 点击 Finish  
+5. 等待Android Studio安装SDK并创建项目.  
+上述命令创建一个Flutter项目，项目名为myapp，其中包含一个使用Material 组件的简单演示应用程序。  
+
+##### 运行应用程序  
+1. 定位到Android Studio 工具栏:  
+2. 在 target selector 中, 选择一个运行该应用的Android设备. 如果没有列出可用，请选择 Tools>Android>AVD Manager 并在那里创建一个  
+3. 在工具栏中点击 Run图标, 或者调用菜单项 Run > Run.  
+4. 如果一切正常, 您应该在您的设备或模拟器上会看到启动的应用程序:  
+
+##### 体验热重载
+
+Flutter 可以通过 热重载（hot reload） 实现快速的开发周期，热重载就是无需重启应用程序就能实时加载修改后的代码，并且不会丢失状态（译者语:如果是一个web开发者，那么可以认为这和webpack的热重载是一样的）。简单的对代码进行更改，然后告诉IDE或命令行工具你需要重新加载（点击reload按钮），你就会在你的设备或模拟器上看到更改。  
+1. 将字符串'You have pushed the button this many times:' 更改为'You have clicked the button this many times:'  
+2. 不要按“Stop”按钮; 让应用继续运行。  
+3. 要查看您的更改, 只需调用 Save All (cmd-s / ctrl-s), 或点击 热重载按钮 (带有闪电⚡️图标的按钮).  
+你就会立即看到更新后的字符串。  
