@@ -2,7 +2,11 @@
 
 Flutter是Google的UI工具包，可通过单个代码库为移动，网络和台式机构建漂亮的，本机编译的应用程序 。  
 
+<<<<<<< HEAD
 ### widgets  
+=======
+#### widgets  
+>>>>>>> 7f6d77bc7d7e995f5a439fb416a30f87c32e9d16
 Flutter小部件是使用从React汲取灵感的现代框架构建的。中心思想是使用小部件构建UI。小部件描述了给定其当前配置和状态的视图外观。当窗口小部件的状态发生变化时，窗口小部件将重新构建其描述，框架会将其与之前的描述进行区分，以便确定在底层渲染树中从一种状态转换到另一种状态所需的最小更改。  
 
 ##### 常用widget  
@@ -12,7 +16,11 @@ Flutter有一套丰富、强大的基础widget，其中以下是很常用的：
 * Stack： 取代线性布局 (译者语：和Android中的LinearLayout相似)，Stack允许子 widget 堆叠， 你可以使用 Positioned 来定位他们相对于Stack的上下左右四条边的位置。Stacks是基于Web开发中的绝度定位（absolute positioning )布局模型设计的。  
 * Container： Container 可让您创建矩形视觉元素。container 可以装饰为一个BoxDecoration, 如 background、一个边框、或者一个阴影。 Container 也可以具有边距（margins）、填充(padding)和应用于其大小的约束(constraints)。另外， Container可以使用矩阵在三维空间中对其进行变换  
 
+<<<<<<< HEAD
 ### MaterialApp
+=======
+#### MaterialApp
+>>>>>>> 7f6d77bc7d7e995f5a439fb416a30f87c32e9d16
 
 为了继承主题数据，widget需要位于MaterialApp内才能正常显示， 因此我们使用MaterialApp来运行该应用。
 
@@ -57,4 +65,7 @@ Flutter 可以通过 热重载（hot reload） 实现快速的开发周期，热
 2. 不要按“Stop”按钮; 让应用继续运行。  
 3. 要查看您的更改, 只需调用 Save All (cmd-s / ctrl-s), 或点击 热重载按钮 (带有闪电⚡️图标的按钮).  
 你就会立即看到更新后的字符串。  
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7f6d77bc7d7e995f5a439fb416a30f87c32e9d16
